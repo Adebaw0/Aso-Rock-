@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Road to Aso Rock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>🇳🇬 Road to Aso Rock</h1>
+  <h3>Endless Leadership Simulator</h3>
+
+  <div id="year">Year: 1</div>
+
+  <div id="dashboard">
+    <p>Trust: <progress max="100" id="trustBar"></progress></p>
+    <p>Economy: <progress max="100" id="ecoBar"></progress></p>
+    <p>Security: <progress max="100" id="secBar"></progress></p>
+    <p>Sovereignty: <progress max="100" id="sovBar"></progress></p>
+    <p>Global Pressure: <progress max="100" id="globBar"></progress></p>
+  </div>
+
+  <div class="stats">
+    <p>Infrastructure: <span id="infra"></span></p>
+    <p>Food: <span id="food"></span></p>
+  </div>
+
+  <div id="event-box">
+    <h2 id="eventTitle"></h2>
+    <p id="eventText"></p>
+  </div>
+
+  <div id="choices"></div>
+
+  <div id="buttons">
+    <button onclick="nextYear()">Next Year ▶</button>
+    <button onclick="saveGame()">💾 Save Game</button>
+    <button onclick="loadGame()">📂 Load Game</button>
+  </div>
+
+  <div id="leaderboard">
+    <input type="text" id="playerName" placeholder="Enter Name">
+    <button onclick="submitScore(document.getElementById('playerName').value)">Submit Score</button>
+  </div>
+
+  <button onclick="unlockPremium()">⭐ Unlock Premium</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
